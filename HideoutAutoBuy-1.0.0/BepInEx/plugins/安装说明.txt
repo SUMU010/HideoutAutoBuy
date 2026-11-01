@@ -1,0 +1,23 @@
+HideoutAutoBuy —— 藏身处一键购买建造 mod（SPT 4.1.5）
+====================================================
+
+安装方法：
+1. 关闭游戏和 SPT 服务器。
+2. 把本压缩包解压，将里面的 SPT_Runtime 和 BepInEx 两个文件夹
+   直接复制（覆盖）到游戏根目录 D:\EFT\ 下。
+   最终文件位置：
+     D:\EFT\SPT_Runtime\user\mods\HideoutAutoBuy\HideoutAutoBuy.dll
+     D:\EFT\BepInEx\plugins\HideoutAutoBuy.Client.dll
+3. 启动 SPT 服务器（用 SPT Launcher）和游戏。
+
+使用方法：
+1. 进入藏身处；
+2. 点击选中一个要建造/升级的区域；
+3. 按 F9 —— 自动从跳蚤市场购买缺失材料并开始建造。
+   （材料已齐时按 F9 直接开始建造；钱不够/无货会在屏幕通知说明）
+
+修改快捷键：
+编辑源码 Client\Plugin.cs 中的 KeyCode.F9，重新运行
+build-hideout-autobuy.ps1 -Client 编译后替换 BepInEx\plugins 下的 dll。
+
+详细说明见 README.md。
